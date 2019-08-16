@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bbg">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35pt"
+        android:src="@mipmap/ic_launcher" />
+
+  <!--  <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/name"
+        android:layout_below="@+id/img_logo"
+        >
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Your Name"
+            android:textSize="25sp"
+            android:inputType="number"
+            android:id="@+id/login_name_et"
+            android:textColor="#FF9100"
+            />
+    </android.support.design.widget.TextInputLayout> -->
+
+    <LinearLayout
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginTop="153dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinnerCountries"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:typeface="serif"
+            android:layout_marginTop="20dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_mobile_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:typeface="serif"
+                android:textColor="#FFffff"
+                android:textSize="25sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login_sendOTP_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Send OTP"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:typeface="serif"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

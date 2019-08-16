@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OptionActivity"
+    android:id="@+id/rl">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/img1"
+        android:scaleType="centerCrop"
+        android:id="@+id/option_img"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_shadow"
+        android:layout_below="@+id/option_img"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="210dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's get started..."
+            android:typeface="serif"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I want to"
+            android:typeface="serif"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/buy_prop_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Buy a Property"
+            android:textAlignment="textStart"
+            android:padding="10dp"
+            android:typeface="serif"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:background="@drawable/login_bg"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"/>
+
+        <TextView
+            android:id="@+id/sell_prop_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Sell My Property"
+            android:textAlignment="textStart"
+            android:padding="10dp"
+            android:typeface="serif"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:background="@drawable/login_bg"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#eeeeee"/>
+
+        <TextView
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:id="@+id/get_prop_on_rent_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Get a Property on Rent"
+            android:textAlignment="textStart"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:typeface="serif"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:background="@drawable/login_bg"/>
+
+        <TextView
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:id="@+id/rent_my_prop_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Rent My Property"
+            android:textAlignment="textStart"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:typeface="serif"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:background="@drawable/login_bg"/>
+
+    </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

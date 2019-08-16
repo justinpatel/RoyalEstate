@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "863298448660",
+    "firebase_url": "https://royal-estate-6b6a9.firebaseio.com",
+    "project_id": "royal-estate-6b6a9",
+    "storage_bucket": "royal-estate-6b6a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863298448660:android:7f046f6623f1aae3",
+        "android_client_info": {
+          "package_name": "com.justin.perfect.royalestate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863298448660-8eep3ia4sv6870c5fjtsa98jh5f437de.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.justin.perfect.royalestate",
+            "certificate_hash": "8e6a92f8d7ca8439fd2277becab1676d4498559b"
+          }
+        },
+        {
+          "client_id": "863298448660-ejukt4uooi4aqkle0eko6d6j2qjjruje.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.justin.perfect.royalestate",
+            "certificate_hash": "df1591631d8541c0f7da827aacb1f2a090e5d13f"
+          }
+        },
+        {
+          "client_id": "863298448660-7hgmbldr0ons6gf8n7jpav668i4b2ade.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnks3xSwJ8RC5kJx6XKe7m62HAyIwzBAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863298448660-7hgmbldr0ons6gf8n7jpav668i4b2ade.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

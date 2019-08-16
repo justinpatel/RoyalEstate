@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ContactDetailsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="#1565c0"
+        android:id="@+id/buy_img"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_arrow"
+        android:onClick="goBack"
+        android:layout_margin="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_shadow"
+        android:layout_below="@+id/buy_img"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How may we address you..?"
+        android:textSize="25sp"
+        android:typeface="serif"
+        android:textColor="#ffffff"
+        android:layout_margin="20dp"
+        android:layout_alignBottom="@+id/buy_img"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/buy_img"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:id="@+id/username"
+        android:theme="@style/MyTextInputLayout"
+        android:textColorHint="#1565c0"
+        >
+
+        <EditText
+            android:id="@+id/username_et"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Enter Your Name"
+            android:inputType="textAutoComplete"
+            android:textColor="#1565c0"
+            android:typeface="serif"
+            android:textSize="25sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:id="@+id/email"
+        android:layout_below="@+id/username"
+        android:theme="@style/MyTextInputLayout"
+        android:textColorHint="#1565c0"
+        >
+
+        <EditText
+            android:id="@+id/email_et"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Enter Your Email ID"
+            android:inputType="textEmailAddress"
+            android:textColor="#1565c0"
+            android:typeface="serif"
+            android:textSize="25sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/makeRequest_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:text="make a request"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        />
+
+</RelativeLayout>

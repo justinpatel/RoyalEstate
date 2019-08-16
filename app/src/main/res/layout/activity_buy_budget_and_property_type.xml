@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".BuyBudgetAndPropertyTypeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:elevation="4dp">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1565c0"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_arrow"
+                android:onClick="goBack"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You are looking to"
+                    android:textColor="#FFFDE7"
+                    android:typeface="serif"/>
+
+                <TextView
+                    android:id="@+id/toolbar_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:textColor="#FFFDE7"
+                    android:text="Buy"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/toolbar_shadow"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just few steps to go..."
+            android:typeface="serif"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:typeface="serif"
+            android:text="Choose property type"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="normal"
+            android:layout_marginLeft="10dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/property_type_list"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:typeface="serif"
+            android:text="Your budget is"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:textStyle="normal"
+            android:layout_marginLeft="10dp"/>
+
+        <org.florescu.android.rangeseekbar.RangeSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/range_seekbar"
+            android:layout_marginTop="10dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:typeface="serif"
+                android:textSize="15sp"
+                android:id="@+id/min_tv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1+ Crores"
+                android:typeface="serif"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/max_tv"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/bedrooms_layout"
+            android:layout_marginTop="40dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:typeface="serif"
+                android:text="No. of Bedrooms"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:layout_marginLeft="10dp"
+                />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/radiogroup">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:buttonTint="#1565c0"
+                        android:id="@+id/radiobtn1"
+                        />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:id="@+id/radiobtn2"
+                        android:buttonTint="#1565c0"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:buttonTint="#1565c0"
+                        android:id="@+id/radiobtn3"
+                        />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:id="@+id/radiobtn4"
+                        android:buttonTint="#1565c0"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="4+"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:id="@+id/radiobtn5"
+                        android:buttonTint="#1565c0"/>
+
+                </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:id="@+id/land_layout"
+            android:layout_marginTop="40dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:typeface="serif"
+                android:text="How many acres"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:inputType="number"
+                android:id="@+id/acre_et"
+                android:backgroundTint="#1565c0"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:id="@+id/shop_layout"
+        android:layout_marginTop="40dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:typeface="serif"
+            android:text="How much sq ft"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:typeface="serif"
+            android:inputType="number"
+            android:id="@+id/sqft_et"
+            android:backgroundTint="#1565c0"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/upload_photo_layout"
+            android:layout_marginTop="10dp"
+            android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/lineLeft"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#b8b8b8" />
+
+            <TextView
+                android:id="@+id/link_to_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="optional"
+                android:textColor="#525252"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/lineRight"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#b8b8b8" />
+
+        </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="55dp"
+                    >
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose photo"
+                        android:id="@+id/choose_photo_btn"/>
+
+                    <ImageView
+                        android:id="@+id/image_view"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="upload"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/upload_photo_btn"/>
+
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+            <Button
+                android:id="@+id/buy2_next_btn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton"
+                android:text="next"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                />
+
+    </RelativeLayout>
+
+</ScrollView>
